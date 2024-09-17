@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renault Sandero</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <h1>Renault Sandero</h1>
+            <img id="carImage" src="img_sandero_black.jpg" alt="Renault Sandero">
+        </div>
+        <div class="details-container">
+            <h2>Renault Sandero Specifications</h2>
+            <ul>
+                <li>Engine: 1.6L</li>
+                <li>Power: 105 HP</li>
+                <li>Transmission: Manual</li>
+                <li>Fuel consumption: 15 km/l</li>
+            </ul>
+            <h3 id="price">Price: $15,000.00 usd</h3>
+            <h3>Change color:</h3>
+            <button onclick="changeCarColor('red')">Red</button>
+            <button onclick="changeCarColor('blue')">Blue</button>
+            <button onclick="changeCarColor('black')">Black</button>
+            <h3>Change rims:</h3>
+            <button onclick="changeRims('standard')">Standard</button>
+            <button onclick="changeRims('sport')">Sport</button>
+            <h3>Order:</h3>
+            <button id="orderButton" onclick="orderCar()" disabled>Order Now</button>
+            <h3>Undo last action:</h3>
+            <button onclick="undoLastAction()">Undo</button>
+            <h3>Redo last action:</h3>
+            <button onclick="redoLastAction()">Redo</button>
+
+        </div>
+    </div>
+</body>
+</html>
+``

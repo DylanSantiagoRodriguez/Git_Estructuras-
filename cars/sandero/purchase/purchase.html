@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Purchase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Purchase</h1>
+        <div id="orderSummary">
+        </div>
+        <form id="purchaseForm">
+            <h2>Shipping and Payment Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <button type="button" onclick="finalizePurchase()">Finalize Purchase</button>
+        </form>
+        <div id="confirmation" style="display: none;">
+            <div id="confirmationDetails"></div>
+            <button id="editButton" type="button" onclick="editPurchase()">Edit</button>
+            <button id="confirmationButton" type="button" onclick="confirmPurchase()">Confirm Purchase</button>
+        </div>
+    </div>
+</body>
+</html>
